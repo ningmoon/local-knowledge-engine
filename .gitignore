@@ -1,0 +1,57 @@
+# Local Python environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+.env
+.env.*
+*.env
+!.env.example
+.npmrc
+.pypirc
+.netrc
+pip.conf
+pip.ini
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+*.pid
+*.tmp
+
+# Local source material, transcripts, checkpoints, and compiled knowledge are
+# private by default. Public examples belong under examples/ and require an
+# explicit license or provenance statement.
+/data/
+/models/
+/checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Local media and generated evidence are private by default everywhere except
+# an explicitly reviewed examples/ subtree.
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.aac
+*.flac
+*.ogg
+*.wma
+*.srt
+
+# Editor and operating-system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Build and test outputs
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/

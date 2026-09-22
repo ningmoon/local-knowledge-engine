@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible Evidence Tooling problem without sharing private course data.
+title: "[Bug]: "
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: Describe the observed and expected behavior. Remove private filenames and content.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: Python, OS, CPU/GPU, PyTorch, Whisper, and FFmpeg versions.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: Use synthetic or authorized sample data only.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Data safety
+      options:
+        - label: I removed private, customer, copyrighted, and identifying course data.
+          required: true

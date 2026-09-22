@@ -1,4 +1,4 @@
 # Platform-neutral direct dependency. PyTorch is selected by a runtime file.
 openai-whisper==20250625
 numpy>=1.26,<3
-torch>=2.13,<2.14
+torch>=2.13,<2.15

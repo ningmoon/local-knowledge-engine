@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/local-knowledge-engine/manifest.schema.json",
+  "title": "Local Knowledge Engine Evidence Manifest",
+  "type": "object",
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "sources": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/source"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": [
+        "source_file",
+        "source_sha256",
+        "duration_seconds",
+        "model",
+        "language",
+        "device",
+        "chunk_seconds",
+        "whisper_version",
+        "created_at",
+        "outputs"
+      ],
+      "properties": {
+        "source_file": {"type": "string", "minLength": 1},
+        "source_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "duration_seconds": {"type": "number", "minimum": 0},
+        "model": {"type": "string", "minLength": 1},
+        "language": {"type": "string", "minLength": 1},
+        "device": {"enum": ["cpu", "cuda"]},
+        "chunk_seconds": {"type": "integer", "minimum": 30},
+        "whisper_version": {"type": "string", "minLength": 1},
+        "created_at": {"type": "string", "format": "date-time"},
+        "outputs": {
+          "type": "object",
+          "required": ["text", "subtitle"],
+          "properties": {
+            "text": {"type": "string", "minLength": 1},
+            "subtitle": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

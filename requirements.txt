@@ -1,0 +1,2 @@
+# Compatibility entry point. CPU is the portable default for new installations.
+-r requirements-cpu.txt

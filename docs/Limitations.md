@@ -1,5 +1,7 @@
 # Limitations
 
+**中文** | [English](en/Limitations.md)
+
 ## Chunk Boundaries
 
 V1 将长媒体切成独立分块，并使用 `condition_on_previous_text=False`。这有助于隔离错误和恢复任务，但边界可能出现：

@@ -1,5 +1,7 @@
 # Local Knowledge Engine
 
+**中文** | [English](README.en.md)
+
 Local Knowledge Engine（LKE）是一套面向长课程与培训资料的、本地优先、
 证据可追溯、人工可审阅、输出长期可复用的知识编译方法与轻量工具链。
 
@@ -102,7 +104,7 @@ Knowledge Compilation 不是本地 Python 自动算法，也不由 `lke transcri
 ## 数据与隐私边界
 
 公开仓库不包含真实课程、音视频、逐字稿、知识产物、运行日志、模型权重或
-本机截图。`data/`、常见媒体格式、字幕与 checkpoint 默认被 Git 忽略。
+未脱敏截图。`data/`、常见媒体格式、字幕与 checkpoint 默认被 Git 忽略。
 
 使用者仍需自行确认源材料版权、说话人同意、保密义务与个人信息处理要求。
 本地运行不等于内容可以公开。公开示例只能使用自制、合成、Public Domain
@@ -114,12 +116,12 @@ Knowledge Compilation 不是本地 Python 自动算法，也不由 `lke transcri
 
 - 本地转录已至少实现三套以上内部真实课程、19 组 TXT/SRT、约 42 小时 10 分钟材料上完成端到端实践。
 
-![图片说明](./docs/work-pic1.png)
+![脱敏后的本地转录运行截图](./docs/work-pic1.png)
 
 - 16 个依赖无关单元测试覆盖 CLI、配置、媒体发现、checkpoint、SRT、
   manifest 和 mocked transcription 主流程；
 
-- CI 在 Python 3.11 上编译源码并运行单元测试；
+- CI 在 Python 3.11 和 3.12 上编译源码并运行单元测试；
 
 - CPU/CUDA 依赖分别声明，CPU 是可移植默认路径；
 

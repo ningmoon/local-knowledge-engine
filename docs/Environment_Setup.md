@@ -1,5 +1,7 @@
 # Environment Setup
 
+**中文** | [English](en/Environment_Setup.md)
+
 ## Prerequisites
 
 - Python 3.11+

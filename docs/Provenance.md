@@ -1,5 +1,7 @@
 # Provenance
 
+**中文** | [English](en/Provenance.md)
+
 ## Purpose
 
 可追溯性用于回答：输出来自哪个源文件、源文件是否变化、使用什么模型和参数、何时生成，以及如何回到原始证据。

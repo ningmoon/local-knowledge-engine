@@ -1,5 +1,7 @@
 # Model Guidance
 
+**中文** | [English](en/Model_Guidance.md)
+
 ## Required Capabilities
 
 执行 Knowledge Compilation 的模型应能够：

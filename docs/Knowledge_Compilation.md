@@ -1,5 +1,7 @@
 # Knowledge Compilation Contract
 
+**中文** | [English](en/Knowledge_Compilation.md)
+
 ## Purpose
 
 Knowledge Compilation 将一套完整长课程的可追溯 Evidence 编译为结构化、长期可复用的候选 Markdown 知识资产。该过程由高理解模型辅助执行，由人工审批；它不是本地 Python 算法，也不是无人监督的一键总结。

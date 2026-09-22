@@ -1,5 +1,7 @@
 # Local Transcription
 
+**中文** | [English](en/Audio_Transcription.md)
+
 本地工具层只负责从媒体生成 Evidence，不调用 LLM，也不生成最终知识文档。
 
 ## Commands

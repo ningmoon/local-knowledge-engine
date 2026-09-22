@@ -1,5 +1,7 @@
 # Human Review Protocol
 
+**中文** | [English](en/Human_Review.md)
+
 > AI output ≠ approved knowledge.
 
 模型输出默认是候选知识。只有人工审阅通过后，才能将其作为最终 `Course_Knowledge.md` 长期复用。

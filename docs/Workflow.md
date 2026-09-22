@@ -1,5 +1,7 @@
 # Standard Workflow
 
+**中文** | [English](en/Workflow.md)
+
 ## 1. Prepare Source
 
 确认课程材料具有合法使用权限，将原始媒体放在本地私有目录。不要将未授权课程复制到公开仓库。

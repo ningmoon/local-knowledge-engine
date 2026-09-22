@@ -1,5 +1,7 @@
 # Architecture
 
+**中文** | [English](en/Architecture.md)
+
 ## Positioning
 
 Local Knowledge Engine 是“方法论 + 轻量工具链 + 标准工作流”，不是完整知识库产品。文件系统是 Evidence Tooling 与模型辅助 Knowledge Compilation 之间的稳定接口；代码不导入或绑定任何 Agent、模型服务或云端 SDK。
